@@ -1,7 +1,7 @@
 
 %define realname   Test-Image-GD
 %define version    0.03
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
