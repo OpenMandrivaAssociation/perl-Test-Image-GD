@@ -1,13 +1,14 @@
 %define upstream_name    Test-Image-GD
+%define upstream_version 0.03
 Name:		perl-%{upstream_name}
 Version:	0.03
-Release:	6
+Release:	1
 
 Summary:	A module for testing images using GD
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/Test-Image-GD-0.03.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -42,20 +43,4 @@ make test
 %doc Changes README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2mdv2011.0
-+ Revision: 658887
-- rebuild for updated spec-helper
-
-* Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
-+ Revision: 405551
-- rebuild using %0.03 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.03-2mdv2009.0
-+ Revision: 268735
-- rebuild early 2009.0 package (before pixel changes)
-
-* Mon Apr 28 2008 Olivier Thauvin <nanardon@mandriva.org> 0.03-1mdv2009.0
-+ Revision: 198022
-- import perl-Test-Image-GD
-
 
