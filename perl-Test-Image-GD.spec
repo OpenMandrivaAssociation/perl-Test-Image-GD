@@ -2,7 +2,7 @@
 %define upstream_version 0.03
 Name:		perl-%{upstream_name}
 Version:	0.03
-Release:	3
+Release:	1
 
 Summary:	A module for testing images using GD
 License:	GPL+ or Artistic
@@ -31,8 +31,7 @@ check the size of the image.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
+%make_build
 %check
 # soft: do not fail package on test failures
 set +e
