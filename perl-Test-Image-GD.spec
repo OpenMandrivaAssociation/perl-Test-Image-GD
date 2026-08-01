@@ -2,7 +2,7 @@
 %define upstream_version 0.03
 Name:		perl-%{upstream_name}
 Version:	0.03
-Release:	1
+Release:	2
 
 Summary:	A module for testing images using GD
 License:	GPL+ or Artistic
